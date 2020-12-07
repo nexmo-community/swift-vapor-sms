@@ -1,12 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Send a text message</title>
+  </head>
 
-  <title>#(title)</title>
-</head>
+  <body>
+    <h1>Send a text message using the Vonage SMS API</h1>
 
-<body>
-  <h1>#(title)</h1>
-</body>
+    <form action="/send" method="post">
+        <p>
+        <label>Phone number E.g. 447000000000</label><br>
+        <input type="text" name="to" place>
+        </p>
+
+        <p>
+        <label>Text message</label><br>
+        <textarea name="text"> </textarea>
+        </p>
+        <button type="submit">Send text</button>
+    </form>
+  </body>
 </html>
