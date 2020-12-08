@@ -5,18 +5,17 @@ func routes(_ app: Application) throws {
         return req.view.render("index")
     }
 
-    app.post("send") { req -> EventLoopFuture<String> in
+    app.post("send") { req -> EventLoopFuture<View> in
         var input = try req.content.decode(Input.self)
         input.apiKey = Environment.get("APIKEY")
         input.apiSecret = Environment.get("APISECRET")
         
         return req.client.post(URI(scheme: "https", host: "rest.nexmo.com", path: "/sms/json")) { req in
             try req.content.encode(input, as: .json)
-        }.map { response -> String in
+        }.flatMap { response -> EventLoopFuture<View> in
             let responseBody = try! response.content.decode(Response.self)
-            return responseBody.messages.first?.status == "0" ? "ok" : "error"
+            return req.view.render("index", ["status": responseBody.messages.first?.status == "0" ? "ok" : "error"])
         }
-        
     }
 }
 
