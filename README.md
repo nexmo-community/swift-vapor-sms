@@ -6,12 +6,25 @@ This is a Swift project that uses [Vapor](vapor.codes) to create a HTTP server f
 
 ## Welcome to Vonage
 
-If you're new to Vonage, you can [sign up for a Vonage API account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=swift-vapor-verify) and get some free credit to get you started.
+If you're new to Vonage, you can [sign up for a Vonage API account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=swift-vapor-sms) and get some free credit to get you started.
 
+## Prerequisites
+
++ A Vonage API account.
+
++ Xcode 12 and Swift 5 or greater.
+
++ [Vapor 4.0](https://vapor.codes) installed on your machine.
 
 ## Running the project
 
-After cloning the project to your machine, open it in Xcode. Build and run (CMD + R) and the server will be accessible on port 8080. 
+After cloning the project to your machine change into the project directory. Add your Vonage API credentials in a `.env` file by running `echo "APIKEY=X \nAPISECRET=Y" > .env` in the terminal replacing `X` and `Y` with your API key and secret respectively.
+
+Open it in Xcode by running `vapor xcode` and wait for Xcode to download the packages.
+
+Set a custom working directory for your project. Go to _Product > Scheme > Edit Scheme..._ and set the working directory to the root folder of your project.
+
+Once done, build and run (CMD + R) and the server will be accessible on port 8080. 
 
 
 ## Getting Help
