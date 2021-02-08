@@ -2,7 +2,7 @@
 
 <img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
 
-This is a Swift project that uses [Vapor](vapor.codes) to create a HTTP server for the [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview). This allows you to send an SMS message to a phone number. This blog shows the project in use with a web page to allow you to test the server.
+This is a Swift project that uses [Vapor](vapor.codes) to create a HTTP server for the [Vonage SMS API](https://developer.nexmo.com/messaging/sms/overview). This allows you to send an SMS message to a phone number. This [blog](https://learn.vonage.com/blog/2021/01/12/how-to-send-sms-messages-with-swift-vapor-and-vonage/) shows the project in use with a web page to allow you to test the server.
 
 ## Welcome to Vonage
 
