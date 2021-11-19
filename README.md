@@ -14,7 +14,7 @@ If you're new to Vonage, you can [sign up for a Vonage API account](https://dash
 
 + Xcode 12 and Swift 5 or greater.
 
-+ [Vapor 4.0](https://vapor.codes) installed on your machine.
++ The [Vapor toolbox](https://docs.vapor.codes/4.0/install/macos/) installed on your machine.
 
 ## Running the project
 
