@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Send a text message</title>
-  </head>
+<head>
+  <meta charset="utf-8">
 
-  <body>
+  <title>Send a text message</title>
+</head>
+
+<body>
     <h1>Send a text message using the Vonage SMS API</h1>
 
     #if(status):
@@ -15,7 +16,7 @@
     <form action="/send" method="post">
         <p>
         <label>Phone number E.g. 447000000000</label><br>
-        <input type="text" name="to" place>
+        <input type="text" name="to">
         </p>
 
         <p>
@@ -24,5 +25,5 @@
         </p>
         <button type="submit">Send text</button>
     </form>
-  </body>
+</body>
 </html>
